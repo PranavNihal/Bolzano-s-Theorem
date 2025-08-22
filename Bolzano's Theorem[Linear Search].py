@@ -12,7 +12,7 @@ a = float(input("Please input lower limit[a]: "))
 b = float(input("Please input upper limit[b]: "))
 acc = float(input("Please input accuracy: "))
 step = float (( abs(a-b) / acc ))
-if((func.subs(x, a).evalf() * (func.subs(x, b).evalf()) < 0)):
+if((func.subs(x, a).evalf() * (func.subs(x, b).evalf()) > 0)):
     print("The function does not necassarily guarantee the existence of the root ")
 else:
     print(step)
@@ -35,6 +35,7 @@ while i <= j:
     i += 1
 
 print("The Approximation using Bolzano's Theorem is: " + str(approximation))
+
 
 
 
